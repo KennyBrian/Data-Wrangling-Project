@@ -1,12 +1,12 @@
 # Data-Wrangling-Project
 
-##Gathering Datasets
+## Gathering Datasets
 Three datasets were Gathered for analysis, namely:
 - Twitter-Archive-Enhanced
 - Image-Predictions
 - Tweet-Json
 
-##Assesing
+## Assesing
 The datasets were assessed visually and programmatically, and following issues were identified for cleaning:
 
 **Quality issues**
@@ -25,7 +25,7 @@ The datasets were assessed visually and programmatically, and following issues w
 - twitter_archive - dog stages are in differents columns. we have dogs in multiple stages
 - merging the three data sets into one
 
-##Cleaning
+## Cleaning
 First, I made the copies of the data using .copy(). Then I removed the retweets and replies to tweets by selecting the row that were null for retweeted_status_id & 
 in_reply_to_status_id. I followed this up by removing all the columns related to retweets and replies to tweets. Secondly, I changed a few columns to correct 
 datatype. First, the tweet_id column datatype to string for the three datasets using astype(str) functionality then the timestamp column to datatype using 
